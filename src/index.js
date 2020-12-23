@@ -10,8 +10,8 @@ import {
 } from 'react-native';
 
 // Icon
-import Feather from 'react-native-vector-icons/Feather';
-Feather.loadFont();
+// import Feather from 'react-native-vector-icons/Feather';
+// Feather.loadFont();
 
 class DropDownPicker extends React.Component {
     constructor(props) {
@@ -547,9 +547,9 @@ DropDownPicker.defaultProps = {
     arrowColor: '#000',
     showArrow: true,
     arrowSize: 15,
-    customArrowUp: (size, color) => <Feather name="chevron-up" size={size} color={color} />,
-    customArrowDown: (size, color) => <Feather name="chevron-down" size={size} color={color} />,
-    customTickIcon: () => <Feather name="check" size={15} />,
+    customArrowUp: (size, color) => {<Text>▲</Text >},
+    customArrowDown: (size, color) => {<Text>▼</Text>},
+    customTickIcon: () => {<Text>√</Text >},
     zIndex: 5000,
     disabled: false,
     searchable: false,
